@@ -45,6 +45,8 @@ console.log('\n\nTesting multiplication\n');
 let encryptedMul = publicKey.multiply(c1, bn2);
 console.log(`E(${num1})^${num2} mod n^2 = E(${num2}·${num1} mod n) = ` + encryptedMul.toString(16), '\n');
 
-let mul = privateKey.decrypt(encryptedMul);
-console.log('Decryption:', mul.toString());
-console.log(`Expecting ${num2}·${num1} mod n :`, bn2.multiply(bn1).mod(publicKey.n).toString());
+let mul = bn1.multiply(bn2).mod(publicKey.n);
+let decryptedMul = privateKey.decrypt(encryptedMul);
+console.log('Decryption:', decryptedMul.toString());
+console.log(`Expecting ${num2}·${num1} mod n :`, mul.toString());
+console.assert(mul.compare(decryptedMul) == 0, 'Something went wrong!');
