@@ -76,7 +76,7 @@ Let c be the ciphertext to decrypt, where c in Z* of n^2
 
 ## Usage
 
-Every input number should be a string in base 10, an integer, or a BigNum. All the output numbers are instances of BigNum.
+Every input number should be a string in base 10, an integer, or a BigInteger. All the output numbers are instances of BigInteger.
 
 ```javascript
 // import paillier and bignum
