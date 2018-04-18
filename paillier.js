@@ -6,7 +6,7 @@ bigInt.rand = function (bitLength) {
     let bytes = bitLength / 8;
     let buf = Buffer.alloc(bytes);
     buf = crypto.randomFillSync(buf);
-    buf[0] = buf[0] | 128;
+    buf[0] = buf[0] | 256;  // first bit to 1 -> to get the necessary bitLength
     return bigInt.fromArray([...buf], 256);
 };
 
