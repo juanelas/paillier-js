@@ -2,7 +2,7 @@
 const paillier = require('./paillier');
 const bigInt = require('big-integer');
 
-const { publicKey, privateKey } = paillier.generateRandomKeys(1024); // Change to at least 2048 bits in production state
+const { publicKey, privateKey } = paillier.generateRandomKeys(512); // Change to at least 2048 bits in production state
 
 console.log('Modulus n has', publicKey.bitLength, 'bits');
 
