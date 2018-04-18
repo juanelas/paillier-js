@@ -1,0 +1,20 @@
+{
+  "name": "paillier-js",
+  "version": "0.9.0",
+  "description": "A pure Javascript implementation of the Paillier cryptosystem",
+  "repository": "github:juanelas/paillier-js",
+  "author": "juanelas (https://github.com/juanelas)",
+  "license": "MIT",
+  "main": "./paillier.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.26",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  }
+}
