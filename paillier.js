@@ -10,7 +10,7 @@ bigInt.rand = function (bitLength) {
     return bigInt.fromArray([...buf], 256);
 };
 
-bigInt.randBetween = function (start, end) {
+bigInt.randBetween = function (start, end) {  // crypto rand in [start, end]
     let interval = end.subtract(start);
     let arr = interval.toArray(256).value;
     let buf = Buffer.alloc(arr.length);
