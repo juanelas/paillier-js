@@ -26,6 +26,7 @@ bigInt.prime = function (bitLength) {
     let rnd;
     do {
         rnd = bigInt.rand(bitLength);
+        console.assert(rnd.bitLength() == bitLength, 'ERROR: ' + rnd.bitLength() + ' != ' + bitLength);
     } while (!rnd.isPrime());
     return bigInt(rnd);
 };
