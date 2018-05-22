@@ -16,7 +16,7 @@ bigInt.randBetween = function (start, end) {  // crypto rand in [start, end]
     let buf = Buffer.alloc(arr.length);
     let bn;
     do {
-        buf = crypto.randomFillSync(buf);
+        crypto.randomFillSync(buf);
         bn = bigInt.fromArray([...buf], 256).add(start);
     } while (bn.compare(end) >= 0 || bn.compare(start) < 0);
     return bn;
