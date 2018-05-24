@@ -2,11 +2,23 @@
   "name": "paillier-js",
   "version": "0.9.0",
   "description": "A pure Javascript implementation of the Paillier cryptosystem",
-  "repository": "github:juanelas/paillier-js",
-  "author": "juanelas (https://github.com/juanelas)",
+  "keywords": [
+    "paillier",
+    "homomorphic",
+    "crypto",
+    "cryptosystem"
+  ],
+  "homepage": "https://github.com/juanelas/paillier-js#readme",
+  "bugs": "https://github.com/juanelas/paillier-js/issues",
   "license": "MIT",
+  "author": {
+    "name": "Juan Hernández Serrano",
+    "email": "jserrano@entel.upc.edu",
+    "url": "https://github.com/juanelas"
+  },
+  "repository": "github:juanelas/paillier-js",
   "main": "./paillier.js",
   "dependencies": {
-    "big-integer": "^1.6.26"
+    "big-integer": "^1.6.28"
   }
 }
