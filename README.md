@@ -79,7 +79,7 @@ Let c be the ciphertext to decrypt, where c in Z* of n^2
 Every input number should be a string in base 10, an integer, or a BigInteger. All the output numbers are instances of BigInteger.
 
 ```javascript
-// import paillier and bignum
+// import paillier
 const paillier = require('./paillier.js');
 
 // create random keys
