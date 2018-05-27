@@ -89,10 +89,10 @@ const PaillierPublicKey = class PaillierPublicKey {
         } while (r.leq(1));
         return this.g.modPow(bigInt(m), this._n2).multiply(r.modPow(this.n, this._n2)).mod(this._n2);
     }
-    addition(...numbers) { // numbers must be ciphertexts
-        return numbers.reduce((sum, next) => sum.multiply(bigInt(next)).mod(this._n2), bigInt(1));
+    addition(...ciphertexts) {
+        return ciphertexts.reduce((sum, next) => sum.multiply(bigInt(next)).mod(this._n2), bigInt(1));
     }
-    multiply(c, k) { // c is ciphertext. m is a number in plain text
+    multiply(c, k) { // c is ciphertext. k is a number
         return bigInt(c).modPow(k, this._n2);
     }
 };
