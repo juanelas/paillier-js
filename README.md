@@ -96,13 +96,13 @@ let c = publicKey.encrypt(m);
 let d = privateKey.decrypt(c);
 
 // homomorphic addition of two chipertexts (encrypted numbers)
-let c1 = public.encrypt(m1);
-let c2 = public.encrypt(m2);
+let c1 = publicKey.encrypt(m1);
+let c2 = publicKey.encrypt(m2);
 let encryptedSum = publicKey.addition(c1, c2);
-let sum = private.decrypt(encryptedSum); // m1 + m2
+let sum = privateKey.decrypt(encryptedSum); // m1 + m2
 
 // multiplication by k
-let c1 = public.encrypt(m1);
+let c1 = publicKey.encrypt(m1);
 let encryptedMul = publicKey.multiply(c1, k);
 let mul = privateKey.decrypt(encryptedMul); // k · m1
 ```
