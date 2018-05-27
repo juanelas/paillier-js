@@ -80,7 +80,7 @@ Every input number should be a string in base 10, an integer, or a BigInteger. A
 
 ```javascript
 // import paillier
-const paillier = require('./paillier.js');
+const paillier = require('paillier.js');
 
 // create random keys
 const {publicKey, privateKey} = paillier.generateRandomKeys(2048);
