@@ -1,4 +1,5 @@
 # A node.js implementation of the Paillier cryptosystem
+>** THIS PROJECT IS NO LONGER MAINTAINED. ** Consider switching to [paillier-bigint](https://github.com/juanelas/paillier-bigint) that it is a pure JS native implementation and will work with both Node.js and Browsers, and not just Node.js.
 
 This is a node.js implementation relying on the [BigInteger.js](https://github.com/peterolson/BigInteger.js) library by Peter Olson.
 
