@@ -1,7 +1,7 @@
 {
   "name": "paillier-js",
   "version": "0.9.2",
-  "description": "A pure Javascript implementation of the Paillier cryptosystem",
+  "description": "A pure Javascript implementation of the Paillier cryptosystem. THIS PROJECT IS NO LONGER MAINTAINED. Consider switching to paillier-bigint that it is a pure JS native implementation and will work with both Node.js and Browsers, and not just Node.js",
   "keywords": [
     "paillier",
     "homomorphic",
@@ -13,12 +13,12 @@
   "license": "MIT",
   "author": {
     "name": "Juan Hernández Serrano",
-    "email": "jserrano@entel.upc.edu",
+    "email": "j.hernandez@upc.edu",
     "url": "https://github.com/juanelas"
   },
   "repository": "github:juanelas/paillier-js",
   "main": "./paillier.js",
   "dependencies": {
-    "big-integer": "^1.6.28"
+    "big-integer": "^1.6.48"
   }
 }
